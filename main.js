@@ -15,3 +15,6 @@ promise1.then(res => {
 }).then(res => {
   console.log('fulfilled', res * 5)
 })
+
+
+
