@@ -14,4 +14,4 @@ promise1.then(res => {
   return res
 }).then(res => {
   console.log('fulfilled', res * 5)
-})
+}).then(res => {})
