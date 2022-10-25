@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>es6 module</title>
-  <script src="./main.js" type="module"></script>
-</head>
-<body>
-    <div id="container">
-      <div id="top"></div>
-      <div id="bottom"></div>
-      <button id="btn" data-count="100">click button</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>es6 module</title>
+    <script src="./main.js" type="module"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      .wrap {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 300px auto 300px;
+      }
+
+      .left,
+      .right,
+      .middle {
+        height: 100px;
+      }
+
+      .left {
+        background: coral;
+      }
+
+      .right {
+        background: lightblue;
+      }
+
+      .middle {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left">左侧</div>
+      <div class="middle">中间</div>
+      <div class="right">右侧</div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+/* 文本单行溢出省略.. */
+.text-only-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 文本多行溢出省略号... */
+.text-many-lines {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 指定溢出行数 */
+  -webkit-line-clamp: 5;
+}
+

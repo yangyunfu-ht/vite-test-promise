@@ -1,17 +1,12 @@
 import MyPromise from "./myPromise"
+import deepClone from "./deepClone"
+import {
+  removeArrayElement,
+  uniqueArrayElement,
+  unipueIncludesArrElemet,
+  uniqueSetArrElement,
+} from "./removeArrayElements"
 
-console.log(import.meta.env)
+import "./style/base.css"
 
-const promise1 = new MyPromise((resolve, reject) => {
-  resolve(100)
-})
-
-promise1.then(res => {
-  console.log('fulfilled', res)
-  return 2 * res
-}).then(res => {
-  console.log('fulfilled', res)
-  return res
-}).then(res => {
-  console.log('fulfilled', res * 5)
-}).then(res => {})
+import GetElementPosition from "./viewPortElement.js"
